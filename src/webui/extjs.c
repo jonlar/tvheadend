@@ -1443,7 +1443,7 @@ extjs_tvadapter(http_connection_t *hc, const char *remain, void *opaque)
   array = htsmsg_create_list();
 
 #if ENABLE_LINUXDVB
-  extjs_list_dvb_adapters(array);
+  //extjs_list_dvb_adapters(array);
 #endif
 
 #if ENABLE_V4L
@@ -1492,7 +1492,7 @@ extjs_start(void)
 		NULL, extjs_tvadapter, ACCESS_ADMIN);
 
 #if ENABLE_LINUXDVB
-  extjs_start_dvb();
+  //extjs_start_dvb();
 #endif
 
 #if ENABLE_V4L
